@@ -2,7 +2,7 @@
 
 
 :root {
-  --primary-color: #4e3fee;
+  --primary-color: rgb(9, 179, 179);
   --dark-color: #14141f;
   --black-color: #000;
   --accent-color: #d57d00;
@@ -11,6 +11,7 @@
   --blueViolet-color: blueviolet;
   --darkGray-color: #343444;
   --lightGray-color: #eee;
+  --gray-color: #ccc;
   
 
   --border-radius-tiny: 0.12rem;
@@ -21,6 +22,7 @@
   --border-radius-xl: 2rem;
   --border-radius-2xl: 2.5rem;
   --border-radius-3xl: 3rem;
+  --border-radius-50: 50%;
 
   --font-size-sm: 0.75rem;
   --font-size-md: 1rem;
@@ -64,9 +66,6 @@ button {
   font-family: inherit;
 }
 
-ul {
-  list-style: none;
-}
 
 a {
   text-decoration: none;

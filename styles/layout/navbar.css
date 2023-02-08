@@ -9,25 +9,43 @@ header nav {
 #navbarItemsContainer {
     padding: 1rem;
 }
-#menuItems {
-    width: 35rem;
-}
+
 #menuItems li {
-    background-color: #ccc;
+    background-color: var(--gray-color);
     padding: 1rem;
     border-radius: 0.5rem;
     transition: all 0.3s linear;
+    cursor: pointer;
+    border: 0.2rem solid var(--black-color);
 }
 #menuItems li.active,#menuItems li:hover {
-   background-color: rgb(9, 179, 179);
+   background-color: var(--primary-color);
 }
-
-#navbarItemsContainer i,#cardContainer i {
+#navbarItemsContainer > i,#cardContainer > i {
     padding: 2rem;
-    background-color: azure;
+    background-color: var(--light-color);
     border-radius: 1rem;
 }
-#navbarItemsContainer i:hover,#cardContainer i:hover {
-    background-color: rgb(9, 179, 179);
+#navbarItemsContainer > i:hover,#cardContainer > i:hover {
+    background-color: var(--primary-color);
     box-shadow: 0.3rem 0.2rem 0.3rem rgba(0,0,0,0.8);
 }
+.searchInput {
+    background-color: var(--light-color);
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+.searchInput input {
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+   
+}
+.searchInput i{
+    transition: all 0.3s ease-in-out;
+}
+.searchInput i:hover {
+    transform: scale(1.2);
+    
+}
+

@@ -1,0 +1,69 @@
+main {
+  padding: 2rem;
+}
+main h2 {
+  text-align: center;
+}
+main > h4 {
+    padding: 0 1.5rem;
+    font-size: 2rem;
+    font-weight: 400;
+}
+.productsContainer ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.productsContainer ul li {
+  background: rgb(45, 45, 181);
+  background: linear-gradient(
+    90deg,
+    rgba(45, 45, 181, 0.9837184873949579) 0%,
+    rgba(14, 14, 79, 1) 35%,
+    rgba(0, 212, 255, 1) 80%
+  );
+  padding: 1rem;
+  border-radius: var(--border-radius-md);
+  transition: all 0.2s linear;
+  margin-top: 2rem;
+  color: var(--lightGray-color);
+}
+.productsContainer ul li:hover {
+  background-color: var(--dark-color);
+  box-shadow: 0.1rem 0.1rem 0.2rem var(--black-color);
+}
+
+.productsContainer ul li .productCard {
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+.productCard a img {
+  max-width: 30rem;
+  border-radius: var(--border-radius-50);
+  padding: 2.5rem;
+}
+.productBrand {
+  font-size: 2rem;
+}
+.productPrice {
+  color: var(--light-color);
+}
+.addToCardBtn {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  transition: all 0.2s linear;
+}
+
+.addToCardBtn:hover {
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  box-shadow: 0.1rem 0.3rem 0.3rem var(--primary-color);
+}
