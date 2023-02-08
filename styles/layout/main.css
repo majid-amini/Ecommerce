@@ -48,7 +48,10 @@ main > h4 {
   max-width: 30rem;
   border-radius: var(--border-radius-50);
   padding: 2.5rem;
+  border-top: 1rem solid var(--black-color);
+  border-bottom: 1rem solid var(--black-color);
 }
+
 .productBrand {
   font-size: 2rem;
 }
