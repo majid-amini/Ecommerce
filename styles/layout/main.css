@@ -30,6 +30,7 @@ main > h4 {
   transition: all 0.2s linear;
   margin-top: 2rem;
   color: var(--lightGray-color);
+  
 }
 .productsContainer ul li:hover {
   background-color: var(--dark-color);
@@ -37,7 +38,6 @@ main > h4 {
 }
 
 .productsContainer ul li .productCard {
-  width: 25rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -60,10 +60,11 @@ main > h4 {
   border-radius: 0.5rem;
   border: none;
   transition: all 0.2s linear;
+  width: 100%;
 }
 
 .addToCardBtn:hover {
   font-weight: bold;
   letter-spacing: 0.1rem;
-  box-shadow: 0.1rem 0.3rem 0.3rem var(--primary-color);
+  box-shadow: 0.2rem 0.3rem 0.3rem var(--primary-color);
 }
