@@ -5,12 +5,17 @@ main h2 {
   text-align: center;
 }
 main > h4 {
-  padding: 0 1.5rem;
+  width: 15rem;
+  padding-left: 2.5rem;
+  margin-top: 2rem;
+  text-align: center;
   font-size: 2rem;
   font-weight: 400;
+  border-bottom: 0.1rem solid var(--lightGray-color);
 }
 .productsContainer ul {
-  width: 100%;
+  max-width: 110rem;
+  margin: 0 auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
