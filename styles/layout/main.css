@@ -5,9 +5,9 @@ main h2 {
   text-align: center;
 }
 main > h4 {
-    padding: 0 1.5rem;
-    font-size: 2rem;
-    font-weight: 400;
+  padding: 0 1.5rem;
+  font-size: 2rem;
+  font-weight: 400;
 }
 .productsContainer ul {
   width: 100%;
@@ -30,7 +30,6 @@ main > h4 {
   transition: all 0.2s linear;
   margin-top: 2rem;
   color: var(--lightGray-color);
-  
 }
 .productsContainer ul li:hover {
   background-color: var(--dark-color);
@@ -45,9 +44,9 @@ main > h4 {
   gap: 1rem;
 }
 .productCard a img {
-  max-width: 30rem;
+  max-width: 28rem;
   border-radius: var(--border-radius-50);
-  padding: 2.5rem;
+  padding: 0 2.5rem;
   border-top: 1rem solid var(--black-color);
   border-bottom: 1rem solid var(--black-color);
 }
@@ -70,4 +69,47 @@ main > h4 {
   font-weight: bold;
   letter-spacing: 0.1rem;
   box-shadow: 0.2rem 0.3rem 0.3rem var(--primary-color);
+}
+
+/* wearing section */
+
+.productsContainer.digital {
+  position: relative;
+}
+.productsContainer.digital ul {
+  flex-wrap: nowrap;
+  overflow: hidden;
+  justify-content: space-around;
+  gap: 2rem;
+  max-width: 110rem;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+}
+
+.productsContainer.digital .productCard {
+  overflow: hidden;
+  width: 100%;
+}
+
+.digital-icons-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 22rem;
+}
+.digital-icons-container i{
+  background-color: var(--dark-color);
+  padding: 1rem;
+  color: var(--light-color);
+  border-radius: var(--border-radius-sm);
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.2s linear;
+}
+.digital-icons-container i:hover {
+  opacity: 1;
 }
