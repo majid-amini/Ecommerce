@@ -106,7 +106,7 @@ main > h4 {
   position: absolute;
   top: 22rem;
 }
-.digital-icons-container i{
+.digital-icons-container i {
   background-color: var(--dark-color);
   padding: 1rem;
   color: var(--light-color);
@@ -117,4 +117,33 @@ main > h4 {
 }
 .digital-icons-container i:hover {
   opacity: 1;
+}
+
+/* slider section */
+
+.paginationContainer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem auto;
+}
+.paginationNumbers .pagination-number {
+  padding: 1.5rem;
+  margin: 0 0.5rem;
+  border: none;
+  border-radius: 0.3rem;
+  transition: all 0.3s ease-in-out;
+  font-weight: 500;
+}
+.paginationNumbers .pagination-number:hover,
+.paginationNumbers .pagination-number.active {
+  background-color: var(--primary-color);
+}
+.hidden {
+  display: none;
+}
+.disabled {
+  color: var(--lightGray-color) !important;
 }
