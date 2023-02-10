@@ -97,3 +97,16 @@ window.addEventListener("load", () => {
     }
   });
 });
+
+// const toggleOnBtn = document.querySelector('.toggleOnBtn');
+const toggleOffBtn = document.querySelector(".toggleOffBtn");
+
+toggleOffBtn.addEventListener("click", () => {
+  if (toggleOffBtn.classList.contains("fa-toggle-off")) {
+    toggleOffBtn.classList.remove("fa-toggle-off");
+    toggleOffBtn.classList.add("fa-toggle-on");
+  } else {
+    toggleOffBtn.classList.remove("fa-toggle-on");
+    toggleOffBtn.classList.add("fa-toggle-off");
+  }
+});
