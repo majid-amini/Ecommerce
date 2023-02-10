@@ -1,0 +1,70 @@
+@import "../layout/reset.css";
+main {
+  padding: 0;
+  margin: 0;
+}
+.registerContainer {
+  background-color: var(--lightGray-color);
+  width: 100%;
+  height: 70vh;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem 0;
+}
+.registerContainer #registerForm {
+  width: 100rem;
+  margin: 0 auto;
+  font-size: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  /* position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateX(50%);
+  transform: translateY(50%); */
+}
+.registerContainer #registerForm div {
+  letter-spacing: 0.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+}
+#registerForm div input {
+  padding: 1.2rem 2rem;
+  width: 30rem;
+  border: none;
+  outline: none;
+  border-radius: var(--border-radius-md);
+}
+#registerForm div label {
+  width: 20rem;
+}
+
+/* .submitBtn:hover {
+  box-shadow: inset 0.1rem 0.1rem 0.1rem var(--dark-color);
+} */
+.submitBtn input {
+  background-color: var(--primary-color);
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: 400;
+  transition: all 0.2s ease-in-out;
+}
+.submitBtn input:hover {
+  letter-spacing: 0.2rem;
+  text-shadow: 0.1rem 0.3rem 0.2rem var(--light-color);
+}
+footer {
+    height: 15vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

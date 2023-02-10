@@ -1,0 +1,6 @@
+.registerBtn {
+    opacity: 0.6;
+}
+.registerBtn:hover {
+    opacity: 1;
+}
