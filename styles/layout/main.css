@@ -16,6 +16,7 @@ main h2 {
   text-align: center;
   font-size: 2rem;
   font-weight: 400;
+  color: var(--dark-color);
   border-bottom: 0.1rem solid var(--darkGray-color);
 }
 .productsContainer ul {
@@ -138,6 +139,10 @@ main h2 {
 }
 .paginationContainer i {
   cursor: pointer;
+  color: var(--dark-color);
+  background-color: var(--primary-color);
+  padding: 0.8rem;
+  border-radius: var(--border-radius-md);
 }
 .paginationNumbers .pagination-number {
   padding: 1.5rem;
@@ -159,3 +164,16 @@ main h2 {
 }
 
 /* pagination-section */
+
+.darkTheme {
+  --light-color: #000;
+  --black-color: snow;
+  --primary-color: #C92C6D;
+  --accent-color: #d57d00;
+  --dark-color: snow;
+  --secondary-color: #515151;
+  --blueViolet-color: blueviolet;
+  --darkGray-color: #343444;
+  --lightGray-color: #000;
+  --gray-color: #ccc;
+}

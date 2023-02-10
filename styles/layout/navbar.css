@@ -78,6 +78,7 @@ header nav {
 #cardContainer > i {
   padding: 2rem;
   background-color: var(--light-color);
+  color: var(--dark-color);
   border-radius: 1rem;
 }
 #navbarItemsContainer > a i:hover,
@@ -87,6 +88,7 @@ header nav {
 }
 .searchInput {
   background-color: var(--light-color);
+  color: var(--dark-color);
   padding: 0.5rem;
   border-radius: 1rem;
 }
@@ -94,6 +96,7 @@ header nav {
   padding: 0.5rem 1rem;
   border: none;
   outline: none;
+  background-color: var(--light-color);
 }
 .searchInput i {
   transition: all 0.3s ease-in-out;

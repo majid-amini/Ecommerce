@@ -20,6 +20,9 @@ prevButton.addEventListener("click", scrollLeftHandler);
 
 //slider-section
 
+
+
+
 const paginationNumbers = document.querySelector(".paginationNumbers");
 const listContainer = document.querySelector("#list-container");
 const listItems = listContainer.querySelectorAll("li");
@@ -77,7 +80,6 @@ window.addEventListener("load", () => {
   setCurrentPage(1);
   prevPage.addEventListener("click", () => {
     if (currentPage == "1") {
-      //   prevPage.classList.add('disabled')
       return;
     }
     setCurrentPage(currentPage - 1);
@@ -97,16 +99,24 @@ window.addEventListener("load", () => {
     }
   });
 });
+//pagination of products
 
-// const toggleOnBtn = document.querySelector('.toggleOnBtn');
+
+
+
+
 const toggleOffBtn = document.querySelector(".toggleOffBtn");
-
+let element = document.body;
+   
 toggleOffBtn.addEventListener("click", () => {
   if (toggleOffBtn.classList.contains("fa-toggle-off")) {
     toggleOffBtn.classList.remove("fa-toggle-off");
     toggleOffBtn.classList.add("fa-toggle-on");
+    element.classList.add("darkTheme");
   } else {
     toggleOffBtn.classList.remove("fa-toggle-on");
     toggleOffBtn.classList.add("fa-toggle-off");
+    element.classList.remove("darkTheme");
   }
 });
+//switchBtn for changing theme
